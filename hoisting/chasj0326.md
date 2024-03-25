@@ -58,8 +58,6 @@ var b;
 
 `undefined` 가 출력되는 것이다.
 
-<br>
-
 > ### let, const 를 통한 변수 선언
 
 let 또는 const 로 변수를 선언하면, **선언과 초기화가 분리**되어 일어나며 **선언 이전에 변수를 사용하는 것이 엄격하게 금지**된다. 이는 **TDZ**(Temporal Dead Zone)의 영향 때문이다.
