@@ -50,3 +50,24 @@ margin과 padding에 상대적인 단위를 사용하게 되면 width 값을 기
 
 브라우저가 규칙을 구문 분석하고 이해하지 못하는 속성이나 값을 발견하면, 이를 무시하고 다음 선언으로 넘어간다.  
 마찬가지로, 브라우저가 이해하지 못하는 선택자를 만나면, 전체 규칙을 무시하고 다음 규칙으로 넘어간다.
+
+## 텍스트 말줄임 처리하기 위해 필요한 속성은?
+
+```css
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+```
+
+## display
+
+- inline  
+  전후 줄바꿈 없이 한 줄에 다른 엘리먼트들과 나란히 배치된다.  
+  width와 height 속성을 지정해도 무시된다.  
+  대표적인 inline 엘리먼트로 `<span>`, `<a>`, `<em>` 태그 등이 있다.
+- block  
+  전후 줄바꿈이 들어가 다른 엘리먼트들을 다른 줄로 밀어내고 혼자 한 줄을 차지한다.  
+  대표적인 block 엘리먼트로 `<div>`, `<p>`, `<h1>` 태그 등이 있다.
+- inline-block  
+  전후 줄바꿈 없이 한줄에 다른 엘리먼트들과 나란히 배치되지만, width와 height 속성을 지정할 수 있다.  
+  대표적인 inline-block 엘리먼트로 `<button>`, `<input>`, `<select>` 태그 등이 있다.
